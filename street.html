@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Вход в библиотеку</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+		<link href="css/style.css" rel="stylesheet">
+		<!--
+		<link href="css/pages/street.css" rel="stylesheet">
+		<link href="css/pages/library.css" rel="stylesheet">
+		<link href="css/pages/header.css" rel="stylesheet">
+		<link href="css/pages/footer.css" rel="stylesheet">
+		<link href="css/pages/dragonlance-main.css" rel="stylesheet">
+		<link href="css/pages/thief-main.css" rel="stylesheet">
+		<link href="css/pages/forgotten-main.css" rel="stylesheet">
+		<link rel="icon" href="img/Favicon1.ico" type="image/x-icon">
+		-->
+		<style>
+			#rain {
+				position: absolute;
+				max-width: 100%;
+				height: 100%;
+				z-index: 10;
+			}
+		</style>
+	</head>
+	<body>
+		<canvas id="rain"></canvas>
+		<main>
+			<div class="street">
+				<div class="street-blink"></div>
+			</div>			
+			<a class="street-door" href="library.html" style="z-index: 15;"></a>
+		</main>
+			<audio autoplay loop>
+				<source src="audio/blizzard.mp3" type="audio/ogg; codecs=vorbis">
+			</audio>
+		<script>
+			var audio = document.querySelector('audio');
+			audio.volume = 0.4;		// Устанавливаем громкость на 50%
+    	</script>
+		<script src="js/rain.js"></script>
+	</body>
+</html>
+

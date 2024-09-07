@@ -1,0 +1,413 @@
+.none {
+  display: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: cleopatra;
+}
+h1 {
+  margin: 0;
+  text-align: center;
+  color: white;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 900px;
+  min-height: calc(-130vh);
+  margin: 0 auto;
+  padding: 0 10px;
+}
+@font-face {
+  font-family: cleopatra;
+  src: url(../font/cleopatra.ttf);
+}
+.main-navigation {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../img/wood.jpg) 0 0 repeat #000000;
+  background-size: contain;
+}
+.main-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  padding: 0;
+  width: 70%;
+}
+.main-menu li {
+  list-style: none;
+}
+.main-menu a {
+  text-decoration: none;
+}
+.main-menu img {
+  width: 275px;
+  height: 100px;
+}
+.logo-portal {
+  display: block;
+  width: 94px;
+  height: 100px;
+  background: url(../img/exit-1.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.logo-portal:hover {
+  background: url(../img/exit-2.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.logo-dragonlance {
+  display: block;
+  width: 300px;
+  height: 100px;
+  background: url(../img/dragonlance/logo3.png) 0 0 no-repeat;
+  background-size: contain;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+.logo-dragonlance:hover {
+  background: url(../img/dragonlance/logo4.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.logo-forgotten-realms {
+  display: block;
+  width: 400px;
+  height: 100px;
+  background: url(../img/forgotten-realms/logo1.png) 0 0 no-repeat;
+  background-size: contain;
+  -webkit-transition: 2.5s ease;
+  transition: 2.5s ease;
+}
+.logo-forgotten-realms:hover {
+  background: url(../img/forgotten-realms/logo2.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.logo-thief {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: url(../img/thief/logo1.png) 50% 0 no-repeat;
+  background-size: contain;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+}
+.logo-thief:hover {
+  background: url(../img/thief/logo2.png) 50% 0 no-repeat;
+  background-size: contain;
+}
+.street {
+  position: relative;
+  max-width: 100%;
+  height: 100vh;
+  background: url(../bg-street-1.jpg) 0 0 no-repeat #000000;
+  background-size: 100% 100%;
+}
+.street-blink {
+  max-width: 100%;
+  height: 100vh;
+  background: url(../bg-street-2.jpg) 0 0 no-repeat #000000;
+  background-size: 100% 100%;
+  -webkit-animation-name: blink;
+          animation-name: blink;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.street-mist {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: url(../img/mist.png) 0 0 no-repeat;
+  opacity: 0.1;
+}
+.street-door {
+  position: absolute;
+  top: 555px;
+  left: 612px;
+  display: block;
+  -webkit-transform: rotate(4deg);
+          transform: rotate(4deg);
+  width: 115px;
+  height: 238px;
+  border-top-left-radius: 40%;
+  border-top-right-radius: 50%;
+  outline: none;
+  background-color: rgb(3, 230, 255);
+  opacity: 0.5;
+}
+.library__welcome{
+  background: url("../img/woodw3.webp") 0 0 no-repeat;
+
+}
+.library__title {
+  margin: 0;
+  margin-bottom: 200px;
+  width: 400px;
+  text-align: center;
+  color: black;
+  background: url("../img/woodw3.webp") 0 0 no-repeat;
+  text-shadow: -2px -2px 15px #f6d542, 2px -2px 15px #f6d542, -2px 2px 15px #f6d542, 2px 2px 15px #f6d542;
+}
+.library__welcome p {
+  position: relative;
+  margin-top: 0;
+  padding: 10px 10px 0 0;
+  font-size: 23px;
+  color: black;
+  font-weight: bold;
+  text-shadow: -2px -2px 0px yellowgreen, 2px -2px 0px yellowgreen, -2px 2px 0px yellowgreen, 2px 2px 0px yellowgreen;
+}
+.library__welcome p::first-letter {
+  position: relative;
+  margin-right: 10px;
+  padding: 45px;
+  font-size: 80px;
+  text-shadow: none;
+  color: yellowgreen;
+  background: url("../bg_latter.PNG") 0 0 no-repeat;
+  text-shadow: -2px -2px 0px black, 2px -2px 0px black, -2px 2px 0px black, 2px 2px 0px black;
+  float: left;
+}
+.library__welcome {
+  margin: 0 auto;
+  width: 600px;
+}
+.library {
+  max-width: 100%;
+  height: 100vh;
+  background: url(../library.jpg) 0 0 no-repeat #000000;
+  background-size: 100% 100%;
+}
+.library-wall {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/library/z.png) 0 0 no-repeat, url(../img/library/bg-red-2.png) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.library-picture,
+.library-picture1,
+.library-picture2,
+.library-picture3 {
+  position: absolute;
+  top: 29%;
+  left: 38%;
+  width: 500px;
+  height: 500px;
+  background: url(../img/library/garret.jpg) 0 0 no-repeat;
+  background-size: contain;
+}
+.library-border {
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  width: 600px;
+  height: 600px;
+  background: url(../img/library/border.png) 0 0 no-repeat;
+  background-size: contain;
+}
+.library-wall1 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/library/wall1.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.library-wall2 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/library/wall2.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.library-wall3 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../img/library/wall5.jpg) 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+.library-wall5 {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background-color: gray;
+}
+.library-picture-test{
+padding: 90px 105px 100px 85px;
+  width: 691px;
+  height: 600px;
+  box-sizing: border-box;
+   background-size: cover !important;
+  background: url(../img/library/border.png) center no-repeat;
+}
+
+.library-img{
+  width: 520px;
+  height: 400px;
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100px;
+  color: white;
+  background: url(../img/wood.jpg) 0 0 repeat #000000;
+  background-size: contain;
+}
+footer div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  margin: 0 auto;
+  width: 50%;
+  height: 100px;
+}
+.smoke {
+  z-index: 0;
+  position: absolute;
+  bottom: 250px;
+  left: 750px;
+}
+.thief-main {
+  background: url(../img/thief/bg-main.jpg) 0 0 no-repeat #000000;
+  background-size: contain;
+}
+.thief-main2 {
+  background: url(../img/thief/bg-thief.png) right bottom no-repeat;
+}
+.catalog-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: white;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.catalog-link h2 {
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.catalog-item a {
+  color: white;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+.catalog-item:hover > a > img {
+  -webkit-transform: rotateY(-80deg) skewy(-5deg);
+          transform: rotateY(-80deg) skewy(-5deg);
+  -webkit-transform-origin: left;
+          transform-origin: left;
+}
+.catalog-item a:hover {
+  -webkit-transform: scale();
+          transform: scale();
+}
+.catalog-item a:hover > h2 {
+  text-shadow: 2px 2px 7px #ffffff, -2px -2px 7px #ffffff;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
+}
+.catalog-item > a > img {
+  width: 200px;
+  height: 300px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  z-index: 4;
+  -webkit-box-shadow: 2px 2px 17px #000000, -2px -2px 17px #000000;
+          box-shadow: 2px 2px 17px #000000, -2px -2px 17px #000000;
+}
+.catalog-item img:hover {
+  -webkit-box-shadow: 2px 2px 17px #000000, -2px -2px 17px #000000;
+          box-shadow: 2px 2px 17px #000000, -2px -2px 17px #000000;
+}
+.papirus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  background-size: contain;
+  -webkit-transform: scalex(-1);
+          transform: scalex(-1);
+}
+.papirus img {
+  width: 200px;
+  height: 300px;
+}
+.catalog-cycle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.catalog-cycle-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.forgotten-realms-main {
+  max-width: 100%;
+  height: 100vh;
+  background: url(../img/forgotten-realms/bg.jpg) 0 0 no-repeat #000000;
+}
+.dragon-lance-main {
+  max-width: 100%;
+  height: 100vh;
+  background: url(../img/dragonlance/bg.jpg) 0 0 no-repeat #000000;
+}

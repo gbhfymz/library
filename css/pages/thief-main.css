@@ -1,0 +1,70 @@
+.thief-main {
+  position: ;
+  background: url(../img/thief/bg-main.jpg) 0 0 no-repeat #000000;
+  background-size: contain;
+}
+.thief-main2 {
+  position: ;
+  background: url(../img/thief/bg-thief.png) right bottom no-repeat;
+  background-size: ;
+}
+.catalog-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: white;
+  transition: all 2s;
+}
+.catalog-link h2 {
+  transition: all 0.8s;
+}
+.catalog-item a {
+  color: white;
+  transition: all 2s;
+}
+.catalog-item:hover > a > img {
+  transform: rotateY(-80deg) skewy(-5deg);
+  transform-origin: left;
+}
+.catalog-item a:hover {
+  transform: scale();
+}
+.catalog-item a:hover > h2 {
+  text-shadow: 2px 2px 7px #ffffff, -2px -2px 7px #ffffff;
+  transition: all 0.8s;
+}
+.catalog-item > a > img {
+  display: ;
+  width: 200px;
+  height: 300px;
+  transition: 2s;
+  z-index: 4;
+  box-shadow: 2px 2px 17px #000000, -2px -2px 17px #000000;
+}
+.catalog-item img:hover {
+  box-shadow: 2px 2px 17px #000000, -2px -2px 17px #000000;
+}
+.papirus {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  height: 300px;
+  background-size: contain;
+  transform: scalex(-1);
+  z-index: ;
+}
+.papirus img {
+  width: 200px;
+  height: 300px;
+}
+.catalog-cycle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.catalog-cycle-center {
+  display: flex;
+  justify-content: center;
+}
