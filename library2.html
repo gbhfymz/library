@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Моя библиотека</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="css/style.css" rel="stylesheet">
+	<link href="css/header.css" rel="stylesheet">
+	<!--
+	<link href="css/library.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet">
+	<link href="css/dragonlance-main.css" rel="stylesheet">
+	<link href="css/thief-main.css" rel="stylesheet">
+	<link href="css/forgotten-main.css" rel="stylesheet">
+	-->
+</head>
+<body>
+	<header class="header">
+		<div class="header__main-menu main-menu">
+			<a class="main-menu__link-portal" href="street.html"></a>
+			<a class="main-menu__link-dragonlance" href="dragonlance.html"></a>
+			<a class="main-menu__link-thief" href="thief.html"></a>
+			<a class="main-menu__link-forgotten-realms" href="forgotten-realms.html"></a>
+		</div>
+	</header>
+	<main>
+		<div class="library">
+			<h1 class="library__title">Здравствуй путник!</h1>
+			<section class="library__welcome container">
+				<p>
+					Я рад, что ты зашел в мою библиотеку. Я с удовольствием поделюсь с тобой своими книгами. Я пришел сюда много лет назад и с тех пор застрял здесь. Если ты любишь книги так же как и я - значит ты здесь на долго. Сейчас я познакомлю тебя с тремя удивительными мирами, а так же, ты увидишь несколько моих иллюстраций к ним, которые представлены ниже.
+				</p>
+			<h1 class="a" >Приятного чтения :)</h1>
+			</section>
+		</div>
+		<div class="library-wall">
+			<div class="library-picture"></div>
+			<div class="library-border"></div>
+		</div>
+		<div class="library-wall1">
+			<div class="library-picture1"></div>
+			<div class="library-border"></div>
+		</div>
+		<div class="library-wall2">
+			<div class="library-picture2">
+								<img class="library-img" src="./img/library/key.jpg">
+
+			</div>
+			<div class="library-border"></div>
+		</div>
+		<div class="library-wall5">
+			<div class="library-picture-test">
+				<img class="library-img" src="./img/library/garret.jpg">
+			</div>
+		</div>
+	</main>
+	<footer class="wood">
+		<div class="">
+			<p>Контакты:</p>
+			<audio id="myAudio" autoplay loop>
+				<source src="audio/nature sounds - dawn.mp3" type="audio/ogg; codecs=vorbis">
+			</audio>
+		</div>
+	</footer>
+	<script>
+		
+		var audio = document.querySelector('audio');
+		audio.volume = 0.4;		// Устанавливаем громкость на 40%
+	</script>
+</body>
+</html>

@@ -1,38 +1,38 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Моя библиотека</title>
-		<meta charset="utf-8">
-		<link href="css/style.css" rel="stylesheet">
-		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-	</head>
-	<body class="forgotten-realms-main">
-		<header class="main-header">
-			<nav class="main-navigation wood">
-				<ul class="main-menu">
-					<li><a class="logo-portal" href="street.html"></a></li>
-					<li><a class="logo-dragonlance" href="dragonlance.html"></a></li>
-					<li><a class="logo-thief" href="thief.html"></a></li>
-					<li><a class="logo-forgotten-realms" href="forgotten-realms.html"></a></li>
-					
-				</ul>
-			</nav>
-		</header>
-		<main>
-            <h1>Хроники Сиалы</h1>
-            
-		</main>
-		<footer class="none">
-			<div class="">
-				<audio id="myAudio" autoplay loop>
-					<source src="audio/Звуки Природы - Рассвет.mp3" type="audio/ogg; codecs=vorbis">
-					<source src="audio/music.mp3" type="audio/mpeg">
-				</audio>
-			</div>
-		</footer>
-		<script>
-			var audio = document.querySelector('audio');
-			audio.volume = 0.4;		// Устанавливаем громкость на 50%
-    	</script>
-	</body>
+<head>
+	<title>Моя библиотека</title>
+	<meta charset="utf-8">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/header.css" rel="stylesheet">
+	<link href="css/forgotten-realms.css" rel="stylesheet">
+	<link href="css/catalog.css" rel="stylesheet">
+	<link href="css/footer.css" rel="stylesheet">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+	<header class="header">
+		<div class="header__main-menu main-menu">
+			<a class="main-menu__link-portal" href="street.html"></a>
+			<a class="main-menu__link-portal" href="library.html">liba</a>
+			<a class="main-menu__link-dzen" href="dzen.html"></a>
+			<a class="main-menu__link-dragonlance" href="dragonlance.html"></a>
+			<a class="main-menu__link-thief" href="thief.html"></a>
+			<a class="main-menu__link-forgotten-realms" href="forgotten-realms.html"></a>
+		</div>
+	</header>
+	<main class="forgotten-realms">
+	</main>
+	<footer class="none">
+		<div class="">
+			<audio id="myAudio" autoplay loop>
+				<source src="audio/nature sounds - dawn.mp3" type="audio/ogg; codecs=vorbis">
+			</audio>
+		</div>
+	</footer>
+	<script>
+		var audio = document.querySelector('audio');
+		audio.volume = 0.4;		// Устанавливаем громкость на 50%
+	</script>
+</body>
 </html>

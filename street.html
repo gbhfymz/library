@@ -1,47 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>Вход в библиотеку</title>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<link rel="icon" href="img/favicon.ico" type="image/x-icon">
-		<link href="css/style.css" rel="stylesheet">
-		<!--
-		<link href="css/pages/street.css" rel="stylesheet">
-		<link href="css/pages/library.css" rel="stylesheet">
-		<link href="css/pages/header.css" rel="stylesheet">
-		<link href="css/pages/footer.css" rel="stylesheet">
-		<link href="css/pages/dragonlance-main.css" rel="stylesheet">
-		<link href="css/pages/thief-main.css" rel="stylesheet">
-		<link href="css/pages/forgotten-main.css" rel="stylesheet">
-		<link rel="icon" href="img/Favicon1.ico" type="image/x-icon">
-		-->
-		<style>
-			#rain {
-				position: absolute;
-				max-width: 100%;
-				height: 100%;
-				z-index: 10;
-			}
-		</style>
-	</head>
-	<body>
-		<canvas id="rain"></canvas>
-		<main>
-			<div class="street">
-				<div class="street-blink"></div>
-			</div>			
-			<a class="street-door" href="library.html" style="z-index: 15;"></a>
-		</main>
-			<audio autoplay loop>
-				<source src="audio/blizzard.mp3" type="audio/ogg; codecs=vorbis">
-			</audio>
-		<script>
-			var audio = document.querySelector('audio');
-			audio.volume = 0.4;		// Устанавливаем громкость на 50%
-    	</script>
-		<script src="js/rain.js"></script>
-	</body>
-</html>
+<head>
+	<title>Вход в библиотеку</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="css/main.css" rel="stylesheet">
+	<link href="css/street.css" rel="stylesheet">
+</head>
+<body>
+	<canvas id="rain"></canvas>
+	<main>
+		<div class="street">
+			<div class="street-blink"></div>
+		</div>			
+		<a class="street__door" href="library.html" style="z-index: 15;">
+			<img class="street__door-img" src="./img/street/door.svg" alt="">
+		</a>
+	</main>
+	<audio class="wind-sound" src="audio/wind.mp3" type="audio/ogg; codecs=vorbis" autoplay loop>
+	</audio>
+	<audio class="door-sound" src="audio/door-noise.mp3"></audio>
+	<script>
+	// Устанавливаем громкость на 50%
+	const windSound = document.querySelector('.wind-sound');
+	windSound.volume = 0.4;
 
+	document.addEventListener('DOMContentLoaded', () => {
+    // Найти элемент изображения и элемент аудио
+    const doorImg = document.querySelector('.street__door-img');
+	const doorSound = document.querySelector('.door-sound');
+	doorSound.volume = 0.1;
+
+    // Обработчик события "mouseenter" для воспроизведения звука
+    doorImg.addEventListener('mouseenter', () => {
+        doorSound.play(); // Воспроизвести звук при наведении
+    });
+
+    // Опционально: остановить звук, если он всё ещё проигрывается при уходе курсора
+    doorImg.addEventListener('mouseleave', () => {
+        doorSound.pause(); // Приостановить звук
+        doorSound.currentTime = 0; // Вернуть звук к началу
+    });
+});
+
+	</script>
+	<script src="js/rain.js"></script>
+</body>
+</html>

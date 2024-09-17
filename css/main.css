@@ -1,0 +1,16 @@
+.none {
+  display: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: '334-font';
+}
+a {
+  text-decoration: none;
+}
+@font-face {
+  font-family: '334-font'; /* Имя шрифта, которое будет использоваться в CSS */
+  src: url('../font/334-font.ttf') format('truetype'); /* Путь к файлу шрифта и его формат */
+}

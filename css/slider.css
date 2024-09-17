@@ -1,0 +1,52 @@
+.slider__wrapper{
+    position: relative;
+    width: 300px;
+    height: 300px;
+  }
+  .slider {
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+  }
+  .slider__slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .slider__slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+  .slider__picture {
+    width: 100%;
+    height: 300px;
+    flex-shrink: 0; /* Предотвратить сжатие изображений */  
+    display: block;
+  }
+  .slider__left,
+  .slider__right{
+  position: absolute;
+  top: 365px;
+  width: 150px;
+  height: 150px;
+  border: none;
+  }
+  .slider__left {
+    left: 500px;
+    background: url(../img/library/arrow-blue-left.png) 0 0 no-repeat;
+    background-size: contain;  
+  }
+  .slider__right {
+    right: 510px;
+    background: url(../img/library/arrow-blue-right.png) 0 0 no-repeat;
+    background-size: contain;  
+  }
+  .slider__left:hover,
+  .slider__right:hover{
+  box-shadow: 0 0 5px 5px blue;
+  transition: all 1s ease;
+  }

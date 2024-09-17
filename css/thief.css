@@ -1,0 +1,6 @@
+.thief {
+  background: 
+    url(../img/thief/bg-thief.png) right bottom no-repeat, /* Второе изображение */
+    url(../img/thief/bg-main.jpg) 0 0 no-repeat; /* Первое изображение */
+    background-color: black;
+}
