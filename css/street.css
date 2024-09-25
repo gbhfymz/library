@@ -1,3 +1,108 @@
+.street__wrapper{
+  position: relative;
+}
+.smoke{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  position: absolute;
+	width: 1920px;
+	height: 100vh;
+	background-color: black;
+  z-index: 20;
+  opacity: 1;
+  /*animation: smoke_wrapper 3s both;*/
+}
+@keyframes smoke_wrapper {
+	to {opacity: 0;}
+}
+.smoke__wrapper{
+	display: flex;
+	justify-content: space-between;
+}
+.smoke__close{
+	position: relative;
+	width: 50px;
+	height: 50px;
+	color: white;
+	border: 3px solid white;
+	box-shadow: 5px 5px 10px whitesmoke, -5px -5px 10px whitesmoke, 5px -5px 10px whitesmoke, -5px 5px 10px whitesmoke;		
+	/*animation: smoky2 3s both;*/
+}
+@keyframes close-smoky {
+	30% {
+	  box-shadow: -15px -15px 25px whitesmoke, 5px 5px 10px whitesmoke, -5px -5px 10px whitesmoke, 5px -5px 10px whitesmoke, -5px 5px 10px whitesmoke;
+	} to {
+	  transform: rotate(360deg);
+	  box-shadow: -25px -25px 25px whitesmoke, 15px 15px 15px whitesmoke, -15px -15px 15px whitesmoke, 15px -15px 15px whitesmoke, -15px 15px 15px whitesmoke;
+	  opacity: 0;
+	}
+}
+@keyframes smoky2 {
+	30% {
+	  text-shadow: 10px 10px 10px whitesmoke, -10px -10px 10px whitesmoke, 10px -10px 10px whitesmoke, -10px 10px 10px whitesmoke;
+	} to {
+	  transform: translate3d(15rem, -8rem, 0) rotate(360deg);
+	  text-shadow: 10px 10px 10px whitesmoke, -10px -10px 10px whitesmoke, 10px -10px 10px whitesmoke, -10px 10px 10px whitesmoke;
+	  opacity: 0;
+	}
+}  
+.smoke__close::before,
+.smoke__close::after{
+	content:'';
+	position: absolute;
+	left: 23px;
+	width: 5px;
+	height: 50px;
+	background-color: white;
+	/*animation: close-smoky 3s both;*/
+}
+.smoke__close::before{
+	transform: rotate(45deg);
+}
+.smoke__close::after{
+	transform: rotate(-45deg);
+}
+.smoke__text{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+	width: 900px;
+	height: 200px;
+}
+.space{
+	margin: 3px 0;
+}
+span {
+	display: inline-block;
+	margin: -2px;
+	padding: 0;
+	color: white;
+	font-size: 20px;
+	text-shadow: 0 0 0 whitesmoke;
+	/*animation: smoky 3s both;*/
+}
+.smoke__string{
+	color: white;
+}
+@keyframes smoky {
+	30% {
+		text-shadow: 10px 10px 10px whitesmoke, -10px -10px 10px whitesmoke, 10px -10px 10px whitesmoke, -10px 10px 10px whitesmoke;
+	} to {
+		transform: translate3d(15rem, -8rem, 0) rotate(360deg) skewX(70deg) scale(1.5);
+		text-shadow: 10px 10px 10px whitesmoke, -10px -10px 10px whitesmoke, 10px -10px 10px whitesmoke, -10px 10px 10px whitesmoke;
+		opacity: 0;
+	}
+}
+@keyframes smoky-mirror {
+	30% {
+	  text-shadow: 10px 10px 10px whitesmoke, -10px -10px 10px whitesmoke, 10px -10px 10px whitesmoke, -10px 10px 10px whitesmoke;
+	} to {
+	  transform: translate3d(18rem, -8rem, 0) rotate(360deg) skewX(70deg) scale(2);
+	  text-shadow: 10px 10px 10px whitesmoke, -10px -10px 10px whitesmoke, 10px -10px 10px whitesmoke, -10px 10px 10px whitesmoke;
+	  opacity: 0;
+	}
+}
 .street {
   position: relative;
   max-width: 100%;
@@ -53,8 +158,9 @@
   background-color: lime;
   overflow: hidden;
   background: url(../img/library/door.svg) 0 0 no-repeat;
-
 }
+
+
 .street__door-img{
   position: absolute;
   top: -50px;
@@ -71,5 +177,5 @@
   position: absolute;
   max-width: 100%;
   height: 100%;
-  z-index: 10;
+  z-index: 15;
 }

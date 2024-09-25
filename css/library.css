@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 180px;
-  max-width: 100%;
+	width: 1920px;
   height: 900px;
   background: url(../img/library/bg-library-desk.jpg) 0 0 no-repeat #000000;
   background-size: 100% 100%;

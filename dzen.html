@@ -24,6 +24,10 @@
 		</div>
 	</header>
 	<main class="dzen">
+		<video class="dzen__video" autoplay loop>
+			<source src="./video/Carol of the Bells.mp4" type="video/mp4">
+			Ваш браузер не поддерживает видео тег.
+		</video>
 		<!--
 		<video class="dzen__video" autoplay muted loop>
 			<source src="./video/owlbg-n.mp4" type="video/mp4">
@@ -46,6 +50,9 @@
 		</div>
 	</footer>
 	<script>
-	</script>
+	// Устанавливаем громкость на 50%
+	const dzenVideo = document.querySelector('.dzen__video');
+	dzenVideo.volume = 0.1;
+	</script>	
 </body>
 </html>
